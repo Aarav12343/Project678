@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Olympic Medal</title>
+   <style>
+     body{
+     text-align:center;
+     background-image: url("bg1.jpg");
+     background-size: cover;
+     }
+     #title{
+     color:blue;
+    font-family:monospace;
+     }
+     #myCanvas{
+      border-width: 10px; 
+      background-color: white;
+      border-style:ridge;
+     }
+     
+   </style>
+ </head>
+ <body>
+   <h1 id="title">Olympic Medal</h1>
+    <canvas id="myCanvas" width="800" height="600">
+
+	  </canvas>
+    <script>
+     var canvas = document.getElementById("myCanvas");
+     var ctx = canvas.getContext("2d");
+         
+     ctx.beginPath();
+     ctx.strokeStyle = "blue";
+     ctx.lineWidth = 5;
+     ctx.arc(200,250,50,0,360);
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.strokeStyle = "orange";
+     ctx.lineWidth = 5;
+     ctx.arc(270,300,50,0,360);
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.strokeStyle = "black";
+     ctx.lineWidth = 5;
+     ctx.arc(340,250,50,0,360);
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.strokeStyle = "green";
+     ctx.lineWidth = 5;
+     ctx.arc(410,300,50,0,360);
+     ctx.stroke();
+
+     ctx.beginPath();
+     ctx.strokeStyle = "red";
+     ctx.lineWidth = 5;
+     ctx.arc(480,250,50,0,360);
+     ctx.stroke();
+
+
+     
+
+
+
+
+
+      
+    </script>
+ </body>
+</html>
+
+  
+
